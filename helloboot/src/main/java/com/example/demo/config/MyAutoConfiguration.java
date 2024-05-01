@@ -1,6 +1,5 @@
-package com.example.demo.helloboot;
+package com.example.demo.config;
 
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import java.lang.annotation.ElementType;
@@ -10,7 +9,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Configuration
-@ComponentScan
-public @interface MySpringBootApplication {
+@Configuration(proxyBeanMethods = false)
+public @interface MyAutoConfiguration {
 }
