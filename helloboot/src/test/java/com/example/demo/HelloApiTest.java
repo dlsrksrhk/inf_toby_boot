@@ -14,7 +14,7 @@ class HelloApiTest {
     @Test
     public void helloApi() {
         TestRestTemplate rest = new TestRestTemplate();
-        ResponseEntity<String> res = rest.getForEntity("http://localhost:8080/hello?name={name}", String.class, "Spring");
+        ResponseEntity<String> res = rest.getForEntity("http://localhost:9090/app/hello?name={name}", String.class, "Spring");
 
         //200 ok res
         //hearder content-type이 text/plain으로 시작
@@ -28,7 +28,7 @@ class HelloApiTest {
     @Test
     public void failHelloApi() {
         TestRestTemplate rest = new TestRestTemplate();
-        ResponseEntity<String> res = rest.getForEntity("http://localhost:8080/hello?name=", String.class);
+        ResponseEntity<String> res = rest.getForEntity("http://localhost:9090/app/hello?name=", String.class);
 
         //internal 500 error res
         assertThat(res.getStatusCode()).isEqualTo(HttpStatus.INTERNAL_SERVER_ERROR);
