@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - HelloRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>HelloRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.demo.helloboot.html">com.example.demo.helloboot</a> &gt; HelloRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.321s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">findHelloFailed()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">increaseCount()</td>
+<td class="success">0.318s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:46:17.605 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+14:46:17.611 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+14:46:17.629 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.demo.helloboot.HelloRepositoryTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+14:46:17.633 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.helloboot.HelloRepositoryTest], using SpringBootContextLoader
+14:46:17.635 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.helloboot.HelloRepositoryTest]: class path resource [com/example/demo/helloboot/HelloRepositoryTest-context.xml] does not exist
+14:46:17.636 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.helloboot.HelloRepositoryTest]: class path resource [com/example/demo/helloboot/HelloRepositoryTestContext.groovy] does not exist
+14:46:17.636 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.helloboot.HelloRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:46:17.636 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.helloboot.HelloRepositoryTest]: HelloRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:46:17.659 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.demo.helloboot.HelloRepositoryTest]
+14:46:17.695 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\dev\git\inf_toby_boot\helloboot\build\classes\java\main\com\example\demo\helloboot\HellobootApplication.class]
+14:46:17.696 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.helloboot.HellobootApplication for test class com.example.demo.helloboot.HelloRepositoryTest
+14:46:17.748 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.demo.helloboot.HelloRepositoryTest]: using defaults.
+14:46:17.749 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+14:46:17.758 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@12cd9150, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@114a85c2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@f415a95, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@cf65451, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@724f138e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@37eeec90, org.springframework.test.context.transaction.TransactionalTestExecutionListener@32fe9d0a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@c9413d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@64da2a7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@46074492, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@d78795, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2c715e84, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@47428937, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3b9d6699, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7caa550]
+14:46:17.761 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@60cf80e7 testClass = HelloRepositoryTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@302fec27 testClass = HelloRepositoryTest, locations = '{}', classes = '{class com.example.demo.helloboot.HellobootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, spring.main.web-application-type=none}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@1fdf1c5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5ef6ae06, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1cdc4c27, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1d3ac898, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@22ffa91a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@581ac8a8], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+14:46:17.766 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@60cf80e7 testClass = HelloRepositoryTest, testInstance = com.example.demo.helloboot.HelloRepositoryTest@740abb5, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@302fec27 testClass = HelloRepositoryTest, locations = '{}', classes = '{class com.example.demo.helloboot.HellobootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, spring.main.web-application-type=none}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@1fdf1c5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5ef6ae06, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1cdc4c27, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1d3ac898, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@22ffa91a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@581ac8a8], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.10)
+
+2024-05-06 14:46:17.943  INFO 22536 --- [    Test worker] c.e.demo.helloboot.HelloRepositoryTest   : Starting HelloRepositoryTest using Java 17.0.10 on kdh with PID 22536 (started by kdh in C:\dev\git\inf_toby_boot\helloboot)
+2024-05-06 14:46:17.944  INFO 22536 --- [    Test worker] c.e.demo.helloboot.HelloRepositoryTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-05-06 14:46:18.325  INFO 22536 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-06 14:46:18.428  INFO 22536 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-06 14:46:18.594  INFO 22536 --- [    Test worker] c.e.demo.helloboot.HelloRepositoryTest   : Started HelloRepositoryTest in 0.815 seconds (JVM running for 1.458)
+my.name = null
+2024-05-06 14:46:18.610  INFO 22536 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@60cf80e7 testClass = HelloRepositoryTest, testInstance = com.example.demo.helloboot.HelloRepositoryTest@740abb5, testMethod = increaseCount@HelloRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@302fec27 testClass = HelloRepositoryTest, locations = '{}', classes = '{class com.example.demo.helloboot.HellobootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, spring.main.web-application-type=none}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@1fdf1c5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5ef6ae06, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1cdc4c27, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1d3ac898, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@22ffa91a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@581ac8a8], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]; transaction manager [org.springframework.jdbc.support.JdbcTransactionManager@6411504a]; rollback [true]
+2024-05-06 14:46:18.914  INFO 22536 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@60cf80e7 testClass = HelloRepositoryTest, testInstance = com.example.demo.helloboot.HelloRepositoryTest@740abb5, testMethod = increaseCount@HelloRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@302fec27 testClass = HelloRepositoryTest, locations = '{}', classes = '{class com.example.demo.helloboot.HellobootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, spring.main.web-application-type=none}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@1fdf1c5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5ef6ae06, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1cdc4c27, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1d3ac898, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@22ffa91a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@581ac8a8], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]
+2024-05-06 14:46:18.920  INFO 22536 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@60cf80e7 testClass = HelloRepositoryTest, testInstance = com.example.demo.helloboot.HelloRepositoryTest@6826b70f, testMethod = findHelloFailed@HelloRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@302fec27 testClass = HelloRepositoryTest, locations = '{}', classes = '{class com.example.demo.helloboot.HellobootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, spring.main.web-application-type=none}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@1fdf1c5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5ef6ae06, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1cdc4c27, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1d3ac898, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@22ffa91a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@581ac8a8], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]; transaction manager [org.springframework.jdbc.support.JdbcTransactionManager@6411504a]; rollback [true]
+2024-05-06 14:46:18.923  INFO 22536 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@60cf80e7 testClass = HelloRepositoryTest, testInstance = com.example.demo.helloboot.HelloRepositoryTest@6826b70f, testMethod = findHelloFailed@HelloRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@302fec27 testClass = HelloRepositoryTest, locations = '{}', classes = '{class com.example.demo.helloboot.HellobootApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, spring.main.web-application-type=none}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@1fdf1c5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5ef6ae06, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1cdc4c27, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1d3ac898, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@22ffa91a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@581ac8a8], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at 2024. 5. 6. 오후 2:46:19</p>
+</div>
+</div>
+</body>
+</html>
