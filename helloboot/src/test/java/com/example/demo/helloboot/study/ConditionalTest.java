@@ -1,4 +1,4 @@
-package com.example.demo.study;
+package com.example.demo.helloboot.study;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

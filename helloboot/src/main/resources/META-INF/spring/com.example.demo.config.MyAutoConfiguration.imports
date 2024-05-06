@@ -1,6 +1,0 @@
-com.example.demo.config.autoconfig.DataSourceConfig
-com.example.demo.config.autoconfig.PropertyPostProcessorConfig
-com.example.demo.config.autoconfig.PropertyPlaceholderConfig
-com.example.demo.config.autoconfig.TomcatWebServerConfig
-com.example.demo.config.autoconfig.JettyWebServerConfig
-com.example.demo.config.autoconfig.DispatcherServletConfig

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.helloboot;
 
 import com.example.demo.helloboot.HelloController;
 import com.example.demo.helloboot.HelloService;
@@ -12,7 +12,7 @@ class HelloControllerTest {
     private static final HelloService helloService = new HelloService() {
         @Override
         public String sayHello(String name) {
-            return null;
+            return name;
         }
 
         @Override
