@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.helloboot.HelloController;
+import com.example.demo.helloboot.HelloService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -8,12 +9,21 @@ import static org.assertj.core.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class HelloControllerTest {
+    private static final HelloService helloService = new HelloService() {
+        @Override
+        public String sayHello(String name) {
+            return null;
+        }
+
+        @Override
+        public int countOf(String name) {
+            return 0;
+        }
+    };
 
     @Test
     public void helloControllerTest() {
-        HelloController helloController = new HelloController(name -> {
-            return name;
-        });
+        HelloController helloController = new HelloController(helloService);
 
         String ret = helloController.hello("Test");
         assertThat(ret).isEqualTo("Test");
@@ -22,9 +32,7 @@ class HelloControllerTest {
     @DisplayName("test")
     @Test
     public void failHelloControllerTest() {
-        HelloController helloController = new HelloController(name -> {
-            return name;
-        });
+        HelloController helloController = new HelloController(helloService);
 
         assertThatThrownBy(() -> {
             String ret = helloController.hello(null);
